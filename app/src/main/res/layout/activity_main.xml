@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:id="@+id/on"
+    android:paddingBottom="30dp"
+    android:paddingTop="20dp">
+
+    <NumberPicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/numberPicker"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:scrollIndicators="top|end"
+        android:descendantFocusability="blocksDescendants"/>
+
+    <NumberPicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/numberPicker2"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:descendantFocusability="blocksDescendants"/>
+
+    <NumberPicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/numberPicker3"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:descendantFocusability="blocksDescendants"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="\u20B9 0.0"
+        android:id="@+id/final_big"
+        android:textSize="70dp"
+        android:scrollIndicators="top|end"
+        android:elegantTextHeight="false"
+        android:singleLine="false"
+        android:typeface="sans"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/balance"
+        android:textAlignment="center"
+        android:gravity="center_horizontal" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/clothes"
+        android:layout_above="@+id/textView2"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:src="@drawable/saree"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_alignStart="@+id/numberPicker2" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView3"
+        android:src="@drawable/bed"
+        android:layout_above="@+id/textView4"
+        android:layout_alignStart="@+id/numberPicker3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  Clothes"
+        android:id="@+id/textView2"
+        android:layout_alignEnd="@+id/numberPicker"
+        android:layout_above="@+id/numberPicker"
+        android:textAlignment="gravity"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saree"
+        android:id="@+id/textView3"
+        android:layout_above="@+id/numberPicker2"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bedsheets"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/imageView2"
+        android:layout_alignStart="@+id/imageView3"
+        android:layout_above="@+id/numberPicker3"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="\u20B9 0.0"
+        android:id="@+id/final_small"
+        android:textSize="30dp"
+        android:layout_below="@+id/final_big"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/balance"
+        android:paddingTop="10dp"
+        android:layout_toStartOf="@+id/imageView2"
+        android:gravity="center_horizontal"
+        android:password="false" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/balance"
+        android:textSize="30dp"
+        android:hint="0.0"
+        android:maxLength="3"
+        android:layout_below="@+id/final_big"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/imageView2"
+        android:layout_alignParentRight="false"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="+"
+        android:id="@+id/plus_sign"
+        android:textSize="25dp"
+        android:layout_alignBottom="@+id/final_small"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@+id/balance"
+        android:paddingTop="10dp" />
+
+</RelativeLayout>

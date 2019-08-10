@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="accent">#F44336</color>
+    <color name="black">#000000</color>
+    <color name="dark">#D32F2F</color>
+    <color name="light">#F44336</color>
+    <color name="veryLight">#E57373</color>
+    <color name="white">#ffffff</color>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <string name="action_settings">Settings</string>
+    <string name="app_name">Iron Calc</string>
+    <string name="hello_world">Hello world!</string>
+    <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+</resources>
